@@ -12,6 +12,13 @@
 		401A03EA200F22D700C4F2B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401A03E8200F22D700C4F2B5 /* Main.storyboard */; };
 		401A03EC200F22D700C4F2B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401A03EB200F22D700C4F2B5 /* Assets.xcassets */; };
 		401A03EF200F22D700C4F2B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401A03ED200F22D700C4F2B5 /* LaunchScreen.storyboard */; };
+		401A03FB200F271900C4F2B5 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A03FA200F271900C4F2B5 /* DataCenter.swift */; };
+		401A03FD200F277D00C4F2B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A03FC200F277D00C4F2B5 /* ListViewController.swift */; };
+		401A0403200F32E000C4F2B5 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A0402200F32E000C4F2B5 /* MovieCell.swift */; };
+		401A0408200F367400C4F2B5 /* avengers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 401A0405200F367400C4F2B5 /* avengers.jpg */; };
+		401A0409200F367400C4F2B5 /* darkknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 401A0406200F367400C4F2B5 /* darkknight.jpg */; };
+		401A040A200F367400C4F2B5 /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 401A0407200F367400C4F2B5 /* thor.jpg */; };
+		401A042A2010F0B100C4F2B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A04292010F0B100C4F2B5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		401A03EB200F22D700C4F2B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		401A03EE200F22D700C4F2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		401A03F0200F22D700C4F2B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401A03FA200F271900C4F2B5 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		401A03FC200F277D00C4F2B5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		401A0402200F32E000C4F2B5 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		401A0405200F367400C4F2B5 /* avengers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avengers.jpg; sourceTree = "<group>"; };
+		401A0406200F367400C4F2B5 /* darkknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkknight.jpg; sourceTree = "<group>"; };
+		401A0407200F367400C4F2B5 /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
+		401A04292010F0B100C4F2B5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		401A03E3200F22D700C4F2B5 /* MyMovieChart */ = {
 			isa = PBXGroup;
 			children = (
+				401A0404200F34B100C4F2B5 /* Resources */,
 				401A03E4200F22D700C4F2B5 /* AppDelegate.swift */,
 				401A03E6200F22D700C4F2B5 /* ViewController.swift */,
 				401A03E8200F22D700C4F2B5 /* Main.storyboard */,
+				401A03FA200F271900C4F2B5 /* DataCenter.swift */,
 				401A03EB200F22D700C4F2B5 /* Assets.xcassets */,
 				401A03ED200F22D700C4F2B5 /* LaunchScreen.storyboard */,
 				401A03F0200F22D700C4F2B5 /* Info.plist */,
+				401A03FC200F277D00C4F2B5 /* ListViewController.swift */,
+				401A0402200F32E000C4F2B5 /* MovieCell.swift */,
+				401A04292010F0B100C4F2B5 /* DetailViewController.swift */,
 			);
 			path = MyMovieChart;
+			sourceTree = "<group>";
+		};
+		401A0404200F34B100C4F2B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				401A0405200F367400C4F2B5 /* avengers.jpg */,
+				401A0406200F367400C4F2B5 /* darkknight.jpg */,
+				401A0407200F367400C4F2B5 /* thor.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +152,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401A0409200F367400C4F2B5 /* darkknight.jpg in Resources */,
 				401A03EF200F22D700C4F2B5 /* LaunchScreen.storyboard in Resources */,
 				401A03EC200F22D700C4F2B5 /* Assets.xcassets in Resources */,
+				401A0408200F367400C4F2B5 /* avengers.jpg in Resources */,
+				401A040A200F367400C4F2B5 /* thor.jpg in Resources */,
 				401A03EA200F22D700C4F2B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				401A03E7200F22D700C4F2B5 /* ViewController.swift in Sources */,
+				401A03FB200F271900C4F2B5 /* DataCenter.swift in Sources */,
+				401A03FD200F277D00C4F2B5 /* ListViewController.swift in Sources */,
+				401A042A2010F0B100C4F2B5 /* DetailViewController.swift in Sources */,
+				401A0403200F32E000C4F2B5 /* MovieCell.swift in Sources */,
 				401A03E5200F22D700C4F2B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
